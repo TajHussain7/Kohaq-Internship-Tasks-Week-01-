@@ -1,0 +1,36 @@
+{
+  "name": "kohaq-landing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"cd server && npm run dev\"",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "dev:client": "vite",
+    "dev:server": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@types/react-scroll": "^1.8.7",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scroll": "^1.8.9"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.47.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
+  }
+}
